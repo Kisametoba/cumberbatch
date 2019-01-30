@@ -1,5 +1,5 @@
 $.getJSON('https://ipapi.co/json/', function(data) {
-  const body = JSON.stringify(data, null, 2);
+  let body = JSON.stringify(data, null, 2);
   console.log(body);
   body = body.substring(1, body.length-2);
   console.log(body);
