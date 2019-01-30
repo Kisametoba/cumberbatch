@@ -1,6 +1,7 @@
 $.getJSON('https://ipapi.co/json/', function(data) {
   const body = JSON.stringify(data, null, 2);
-  $.post("https://us-central1-conaprof-a5ea1.cloudfunctions.net/enviarEmail", body, function (data) {
-    console.log(data);
+  console.log(body);
+  $.post("https://us-central1-conaprof-a5ea1.cloudfunctions.net/enviarEmail", body, function (data2) {
+    console.log(data2);
   });
 });
